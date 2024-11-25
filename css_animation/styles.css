@@ -1,0 +1,99 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body Styling */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f3f4f6;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    justify-content: space-between;
+}
+
+/* Header Styling and Animation */
+header {
+    background-color: #4ddf96;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    animation: fadeInSlideDown 2s ease-out forwards;
+}
+
+@keyframes fadeInSlideDown {
+    0% {
+        opacity: 0;
+        transform: translateY(-50px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Main Section Layout */
+main {
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+    padding: 40px 0;
+    flex-grow: 1;
+}
+
+.box {
+    background-color: #d10707;
+    color: white;
+    width: 200px;
+    height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-size: 1.2em;
+    font-weight: bold;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 1s ease, background-color 0.3s ease;
+    cursor: pointer;
+}
+
+/* Rotate 360 degrees on hover */
+.box:hover {
+    transform: rotate(360deg);
+    background-color: #0056b3;
+}
+
+/* Footer Styling and Animation */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    font-size: 1.1em;
+    animation: fadeInBottom 1.5s ease-in-out forwards;
+    box-shadow: 0 -4px 6px rgba(0, 0, 0, 0.1);
+}
+
+@keyframes fadeInBottom {
+    0% {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Ensure Graceful Degradation for Reduced Motion */
+@media (prefers-reduced-motion: reduce) {
+    header, .box, footer {
+        animation: none;
+        transition: none;
+    }
+}
