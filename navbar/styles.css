@@ -1,0 +1,103 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family:'Times New Roman', Times, serif;
+    font-size: large;
+}
+
+/* Header */
+header {
+    background-color: #333;
+    color: white;
+    padding: 10px 0;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    margin: 0 10px;
+    display: block;
+}
+
+/* Main Content */
+main {
+    /* padding: 20px; */
+}
+
+.banner {
+    width: 100%;
+    height: 350px;
+    background-image: url('cricket.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+.content {
+    display: flex;
+    justify-content: space-between;
+    /* margin-top: 20px; */
+}
+
+.content .left {
+    width: 48%;
+    padding: 1rem;
+}
+
+.content .right {
+    width: 48%;
+}
+
+.footer {
+    background-color: #333;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+}
+
+/* Social Media Icons */
+.social-icons a {
+    color: white;
+    margin: 0 10px;
+    font-size: 20px;
+    text-decoration: none;
+}
+
+/* Media Queries */
+@media (max-width: 1024px) {
+    .content {
+        flex-direction: column;
+    }
+
+    .content .left,
+    .content .right {
+        width: 100%;
+    }
+}
+
+@media (max-width: 768px) {
+    nav {
+        flex-direction: column;
+    }
+
+    nav a {
+        text-align: center;
+        padding: 10px;
+    }
+}
+
+@media (max-width: 320px) {
+    .banner {
+        height: 200px;
+    }
+}
