@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Timetable with Tooltip</title>
+</head>
+<body>
+  <div class="timetable-container">
+    <h1>Sample Timetable</h1>
+    <table>
+      <thead>
+        <tr>
+          <th>Timings/Days</th>
+          <th>Monday</th>
+          <th>Tuesday</th>
+          <th>Wednesday</th>
+          <th>Thursday</th>
+          <th>Friday</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>8:30 am - 9:00 am</td>
+          <td colspan="5" class="tooltip" data-tooltip="Arrival & Morning Fitness">Arrival & Morning Fitness</td>
+         
+        </tr>
+        <tr>
+          <td>9:00 am - 10:00 am</td>
+          <td colspan="4" class="tooltip Inquiry" data-tooltip="Inquiry-based activities">Inquiry</td>
+          <td rowspan="4" class="tooltip Outdoor" data-tooltip="Outdoor Learning, Motor Skills, and P.E.">Outdoor Learning</td>
+        </tr>
+        <tr>
+          <td>10:00 am - 10:30 am</td>
+          <td colspan="4">Snack</td>
+        </tr>
+        <tr>
+          <td>10:30 am - 11:15 am</td>
+          <td class="tooltip Art" data-tooltip="Art - Teacher: Mrs. Anjali Kapoor">Art</td>
+          <td class="tooltip Literacy" data-tooltip="Literacy - Teacher: Mr. Rajeev Sharma">Literacy</td>
+          <td class="tooltip Literacy" data-tooltip="Literacy - Teacher: Mr. Rajeev Sharma">Literacy</td>
+          <td class="tooltip Literacy" data-tooltip="Literacy - Teacher: Mr. Rajeev Sharma">Literacy</td>
+        
+        </tr>
+        <tr>
+          <td>11:15 am - 12:00 pm</td>
+          <td class="tooltip PE" data-tooltip="P.E. - Teacher: Mr. Arvind Iyer">P.E.</td>
+          <td class="tooltip Math" data-tooltip="Math - Teacher: Mrs. Meenakshi Joshi">Math</td>
+          <td class="tooltip Math" data-tooltip="Math - Teacher: Mrs. Meenakshi Joshi">Math</td>
+          <td class="tooltip Math" data-tooltip="Math - Teacher: Mrs. Meenakshi Joshi">Math</td>
+          
+        </tr>
+        <tr>
+          <td>12:00 pm - 1:00 pm</td>
+          <td colspan="5">Lunch / Recess</td>
+        </tr>
+        <tr >
+          <td>1:00 pm - 1:45 pm</td>
+          <td class="tooltip sub1" data-tooltip="Penmanship/Fine Motor Skills - Teacher: Ms. Kelly">Penmanship / Fine Motor Skills</td>
+          <td class="tooltip sub1" data-tooltip="Self-regulation - Teacher: Ms. Kim">Self-regulation</td>
+          <td class="tooltip sub1" data-tooltip="Socio-emotional Learning - Teacher: Ms. White">Socio-emotional Learning</td>
+          <td class="tooltip sub1" data-tooltip="Collaborative Learning - Teacher:Mr. Sameer Das">Collaborative Learning</td>
+          <td class="tooltip sub1" data-tooltip="Social Skills - Teacher: Ms. Lin">Social Skills</td>
+        </tr>
+        <tr>
+          <td>1:45 pm - 2:30 pm</td>
+          <td class="tooltip sub2" data-tooltip="ICT - Teacher: Mr. Turner">ICT</td>
+          <td class="tooltip sub2" data-tooltip="Outdoor Play - Teacher:Mr. Pradeep Verma">Outdoor Play</td>
+          <td class="tooltip sub2" data-tooltip="Outdoor Play - Teacher:Mr. Pradeep Verma">Outdoor Play</td>
+          <td class="tooltip sub2" data-tooltip="Speech & Drama - Teacher:Ms. Pooja Singh">Speech and Drama</td>
+          <td class="tooltip sub2" data-tooltip="Music - Teacher: Ms. Lara">Music</td>
+        </tr>
+        <tr>
+          <td>2:30 pm - 4:00 pm</td>
+          <td colspan="5">CCA</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</body>
+</html>
