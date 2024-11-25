@@ -1,0 +1,40 @@
+<html>
+<head>
+    <title>User Registration Form</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="form-container">
+        <h2>Register</h2>
+        <form id="registrationForm">
+            <div class="form-group">
+                <label for="fullName">Full Name</label>
+                <input type="text" id="fullName" name="fullName">
+                <div class="error" id="fullNameError">Full Name must be at least 3 characters long and contain only alphabets and spaces.</div>
+            </div>
+            <div class="form-group">
+                <label for="email">Email Address</label>
+                <input type="email" id="email" name="email">
+                <div class="error" id="emailError">Invalid email address.</div>
+                <div class="valid" id="emailValid">Valid email.</div>
+            </div>
+            <div class="form-group">
+                <label for="password">Password</label>
+                <input type="password" id="password" name="password">
+                <div class="error" id="passwordError">Password must be at least 8 characters long, contain one uppercase letter, one lowercase letter, one number, and one special character.</div>
+                <div class="password-strength" id="passwordStrength"></div>
+                <div class="tooltip" id="passwordTooltip">At least 8 characters, one uppercase letter, one lowercase letter, one number, and one special character.</div>
+            </div>
+            <div class="form-group">
+                <label for="phone">Phone Number</label>
+                <input type="text" id="phone" name="phone">
+                <div class="error" id="phoneError">Phone Number must be exactly 10 digits.</div>
+            </div>
+            <button type="submit" class="submit-btn" id="submitBtn">Submit</button>
+        </form>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
