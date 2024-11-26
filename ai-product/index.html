@@ -6,15 +6,16 @@
     <title>
         AI Solutions
     </title>
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet" />
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&amp;display=swap" rel="stylesheet" />
-  
+
+    <script src="https://cdn.tailwindcss.com">
+
+    </script>
     <link rel="stylesheet" href="styles.css">
 </head>
 
 <body class="bg-gray-100">
     <header>
-        <h1>
+        <h1 class="text-4xl font-semibold">
             AI Solutions
         </h1>
     </header>
@@ -34,146 +35,187 @@
     </nav>
     <div class="container">
         <section id="featured">
-            <h2 class="section-title">
+            <h2 class="section-title text-3xl font-semibold">
                 Featured AI Solutions
             </h2>
-            <div class="carousel">
-                <div class="carousel-item">
-                    <img alt="AI product 1 image description" height="600"
-                        src="Img1.jpg"
-                        width="100%" />
-                    
+            <!-- <div class="carousel"> -->
+            <div class="slideshow-container">
+
+                <div class="mySlides fade">
+                    <div class="numbertext">1 / 3</div>
+                    <img src="img2.jpg" style="width:100%  ">
+                    <div class="text">Caption Text</div>
                 </div>
-                <div class="carousel-item">
-                    <img alt="AI product 2 image description" height="600"
-                        src="./img2.jpg"
-                        width="100%" />
-                    
+
+                <div class="mySlides fade">
+                    <div class="numbertext">2 / 3</div>
+                    <img src="img3.jpg" style="width:100%">
+                    <div class="text">Caption Two</div>
                 </div>
-                <div class="carousel-item">
-                    <img alt="AI product 3 image description" height="600"
-                        src="./img3.jpg"
-                        width="200" />
-                   
+
+                <div class="mySlides fade">
+                    <div class="numbertext">3 / 3</div>
+                    <img src="Img1.jpg" style="width:100%">
+                    <div class="text">Caption Three</div>
+                </div>
+
+                <a class="prev" onclick="plusSlides(-1)">❮</a>
+                <a class="next" onclick="plusSlides(1)">❯</a>
+
+                <br>
+
+                <div style="text-align:center">
+                    <span class="dot" onclick="currentSlide(1)"></span>
+                    <span class="dot" onclick="currentSlide(2)"></span>
+                    <span class="dot" onclick="currentSlide(3)"></span>
                 </div>
             </div>
-            <div class="carousel-controls">
-                <button id="prev">
-                    <i class="fas fa-chevron-left">
-                    </i>
-                </button>
-                <button id="next">
-                    <i class="fas fa-chevron-right">
-                    </i>
-                </button>
-            </div>
+
         </section>
         <section id="case-studies">
-            <h2 class="section-title">
+            <h2 class="section-title text-3xl font-semibold ">
                 Case Studies
             </h2>
             <div class="flex flex-wrap justify-between">
-                <div class="case-study w-full md:w-1/3 p-2">
-                    <img alt="Case study 1 image description" height="200"
-                        src="https://storage.googleapis.com/a1aa/image/pfHFYeiNfqMhWISAe6jBA9V23HjRahUjNVyK7MKyaaI11fjeE.jpg"
-                        width="200" />
-                    <div>
-                        <h3>
-                            Case Study 1
-                        </h3>
-                        <p>
-                            Description of Case Study 1.
-                        </p>
-                    </div>
+                <div class="case-study  md:w-1/3 p-2 justify-center ">
+                    <a class="flex justify-center column"
+                        href="https://www.digitaleurope.org/news/case-studies-on-artificial-intelligence/">
+                        <img alt="Case study 1 image description" height="200" src="microsoft.jpeg" width="200" />
+                        <div>
+                            <h2 class="text-xl font-semibold text-gray-700">
+                                Microsoft’s 2030 vision on Healthcare, Artificial Intelligence, Data and Ethics
+                            </h2>
+
+
+                            <p>
+                                The intersection between technology and health has been an increasing area of focus for
+                                policymakers, patient groups, ethicists and innovators.
+                            </p>
+                        </div>
+                    </a>
                 </div>
                 <div class="case-study w-full md:w-1/3 p-2">
-                    <img alt="Case study 2 image description" height="200"
-                        src="https://storage.googleapis.com/a1aa/image/04p1ciO7I0rfeEpelFwUyHDf7JEdzgpkwEi1vx0Q2GZB2fjeE.jpg"
-                        width="200" />
-                    <div>
-                        <h3>
-                            Case Study 2
-                        </h3>
-                        <p>
-                            Description of Case Study 2.
-                        </p>
-                    </div>
+                    <a class="flex justify-center column" href="https://www.intel.com/content/www/us/en/homepage.html">
+
+                        <img alt="Case study 2 image description" height="200" src="intel.jpg" width="200" />
+                        <div>
+                            <h2 class="text-xl font-semibold text-gray-700">
+                                Intel – AI for cardiology treatment
+                            </h2>
+                            <p>
+                                Precision medicine for cancers requires the delivery of individually-adapted medical
+                                care
+                                based on the genetic characteristics of each patient.
+                            </p>
+                        </div>
+                    </a>
                 </div>
                 <div class="case-study w-full md:w-1/3 p-2">
-                    <img alt="Case study 3 image description" height="200"
-                        src="https://storage.googleapis.com/a1aa/image/yxXlbR1qeIWsRKK5IyncRNbu6cNrsYrCr56FVnerXcVb9fonA.jpg"
-                        width="200" />
-                    <div>
-                        <h3>
-                            Case Study 3
-                        </h3>
-                        <p>
-                            Description of Case Study 3.
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <section id="blog">
-            <h2 class="section-title">
-                Blog
-            </h2>
-            <div class="flex flex-wrap justify-between">
-                <div class="blog-post w-full md:w-1/3 p-2">
-                    <img alt="Blog post 1 image description" height="200"
-                        src="https://storage.googleapis.com/a1aa/image/HdcIxuLeiu0UCii4b9CV3BHWgjxzvdLr8q8WWfScqIZV9fonA.jpg"
-                        width="200" />
-                    <div>
-                        <h3>
-                            Blog Post 1
-                        </h3>
-                        <p>
-                            Description of Blog Post 1.
-                        </p>
-                    </div>
-                </div>
-                <div class="blog-post w-full md:w-1/3 p-2">
-                    <img alt="Blog post 2 image description" height="200"
-                        src="https://storage.googleapis.com/a1aa/image/DTwP4hkGlqYZMxcJy9hare7aF7gdZ9fSNzOuwzVsQ1pc9fonA.jpg"
-                        width="200" />
-                    <div>
-                        <h3>
-                            Blog Post 2
-                        </h3>
-                        <p>
-                            Description of Blog Post 2.
-                        </p>
-                    </div>
-                </div>
-                <div class="blog-post w-full md:w-1/3 p-2">
-                    <img alt="Blog post 3 image description" height="200"
-                        src="https://storage.googleapis.com/a1aa/image/uQ6aUf5s4b3BK6ww3PPeERHZeKngAFTiq22K0mI0W7iy6fRPB.jpg"
-                        width="200" />
-                    <div>
-                        <h3>
-                            Blog Post 3
-                        </h3>
-                        <p>
-                            Description of Blog Post 3.
-                        </p>
-                    </div>
+                    <a class="flex justify-center column"
+                        href="https://www.linkedin.com/pulse/chatbot-ai-pharma-industry-danilo-pagano/">
+
+                        <img alt="Case study 3 image description" height="200" src="msd.jpeg" width="200" />
+                        <div>
+                            <h2 class="text-xl font-semibold text-gray-700">
+                                MSD – AI for healthcare professionals
+                            </h2>
+                            <p>
+                                MSD has launched, as part of its MSD Salute programme in Italy, a chatbot for
+                                physicians,
+                                powered by AI and machine learning.
+                            </p>
+                        </div>
+                    </a>
                 </div>
             </div>
         </section>
         <section class="statistics">
-            <h2 class="section-title">
+            <h2 class="section-title text-2xl font-semibold ">
                 AI Statistics
             </h2>
-            <div id="stats">
-            <div class="one box">This is text</div>
-            <div class="tow box">second text</div>
-            <div class="three box">Third text</div>
-            <div class="four box">fourth</div>
+            <div id="stats" class="flex flex-wrap justify-center">
+                <div class="stat-box w-full md:w-1/3 p-2">
+                    <p>
+                        AI is expected to create 2.3 million jobs by 2025.
+                    </p>
+                </div>
+                <div class="stat-box w-full md:w-1/4 p-2">
+                    <p>
+                        The AI market is projected to reach $190 billion by 2025.
+                    </p>
+                </div>
+                <div class="stat-box w-full md:w-1/4 p-2">
+                    <p>
+                        AI can increase business productivity by up to 40%.
+                    </p>
+                </div>
+                <div class="stat-box w-full md:w-1/4 p-2">
+                    <p>
+                        85% of customer interactions will be managed without a human by 2025.
+                    </p>
+                </div>
+            </div>
+        </section>
+        <section id="blog">
+            <h2 class="section-title text-2xl font-semibold">
+                Blog
+            </h2>
+            <div class="flex flex-wrap justify-between">
+         
+                <div class="blog-post  md:w-1/3 p-2 justify-center ">
+                    <a class="flex justify-center column"
+                        href="https://www.datacamp.com/blog/what-is-ai-quick-start-guide-for-beginners?utm_source=google&utm_medium=paid_search&utm_campaignid=19589720824&utm_adgroupid=152984013054&utm_device=c&utm_keyword=&utm_matchtype=&utm_network=g&utm_adpostion=&utm_creative=720362650471&utm_targetid=dsa-2222697810678&utm_loc_interest_ms=&utm_loc_physical_ms=9075193&utm_content=DSA~blog~Artificial-Intelligence&utm_campaign=230119_1-sea~dsa~tofu_2-b2c_3-row-p2_4-prc_5-na_6-na_7-le_8-pdsh-go_9-nb-e_10-na_11-na-bfcm24&gad_source=1&gclid=CjwKCAiA3ZC6BhBaEiwAeqfvyjDws1jEtMf6SKg97g9JFsRqS_o4-RO8v4ACgC4vY0wwCnRKWDysuhoC9lUQAvD_BwE">
+                        <img alt="Blog post 1 image description" height="200" src="blog1.png" width="200" />
+                        <div>
+                            <h2 class="text-xl font-semibold text-gray-700">
+                                What is AI?
+                            </h2>
 
+
+                            <p>
+                                The term AI has been in vogue for a while now. Artificial intelligence is a concept that
+                                has
+                                existed for many years, and various technologies rely on AI to function.
+                            </p>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="blog-post w-full md:w-1/3 p-2 ">
+                    <a class="flex justify-center column" href="https://pair.withgoogle.com/">
+
+                        <img alt="Blog post 2 image description" height="200" src="blog2.png" width="200" />
+                        <div>
+                            <h2 class="text-xl font-semibold text-gray-700">
+                                People + Ai
+                            </h2>
+                            <p>
+                                People + AI Research (PAIR) is a multidisciplinary team at Google that explores the human
+                                side of AI by doing fundamental research, building tools, creating design frameworks, and
+                                working with diverse communities.
+                            </p>
+                        </div>
+                    </a>
+                </div>
+                <div class="blog-post w-full md:w-1/3 p-2">
+                    <a href="https://www.uipath.com/blog/ai/agentic-automation-not-just-thinking-its-doing" class="flex justify-center column">
+
+                        <img alt="Blog post 3 image description" height="200" src="blog3.png" width="200" />
+                        <div>
+                            <h3 class="text-xl font-semibold text-gray-700">
+                                AI’s next act is agentic: It’s not just thinking—it’s doing
+                            </h3>
+                            <br>
+                            <p>
+                                
+                            </p>
+                        </div>
+                    </a>
+                </div>
             </div>
         </section>
         <section id="contact">
-            <h2 class="section-title">
+            <h2 class="section-title text-2xl font-semibold">
                 Contact Us
             </h2>
             <form class="contact-form" id="contactForm">
@@ -185,11 +227,10 @@
                 </button>
             </form>
         </section>
-  
     </div>
-    <script src="https://cdn.tailwindcss.com">
+    <script src="script.js">
+
     </script>
-    <script src="script.js"></script>
 </body>
 
 </html>
